@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Button from '~/components/mock-up/button';
+import Button from '~/components/templates/components/button';
 
 export default function QuoteSection() {
   const { quoteSection } = useUIConfig();

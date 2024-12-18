@@ -7,8 +7,8 @@ import { Navigation } from 'swiper/modules';
 import { useUIConfig } from '~/context/UIConfigProvider';
 import { ChevronLeftIcon, ChevronRightIcon } from '@radix-ui/react-icons';
 
-import Image from '~/components/mock-up/image';
-import Rating from '~/components/mock-up/rating';
+import Image from '~/components/templates/components/image';
+import Rating from '~/components/templates/components/rating';
 import { TESTIMONIALS } from '~/lib/constants';
 import { cn } from '~/lib/utils';
 

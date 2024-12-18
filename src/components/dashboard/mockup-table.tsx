@@ -44,7 +44,7 @@ const MockupTable = () => {
               <TableCell className='w-[100px] text-left'>{index + 1}</TableCell>
 
               <TableCell className='font-medium'>
-                <Link className='block capitalize' href={`/mock-up/${mockup.slug}`} key={mockup.id}>
+                <Link className='block capitalize' href={`/templates/${mockup.slug}`} key={mockup.id}>
                   {mockup.name}
                 </Link>
               </TableCell>

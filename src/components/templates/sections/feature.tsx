@@ -4,8 +4,8 @@ import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
 
-import Image from '~/components/mock-up/image';
-import Button from '~/components/mock-up/button';
+import Image from '~/components/templates/components/image';
+import Button from '~/components/templates/components/button';
 
 export default function FeatureSection() {
   const { servicesSection } = useUIConfig();

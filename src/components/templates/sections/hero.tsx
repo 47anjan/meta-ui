@@ -3,9 +3,9 @@
 import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Image from '~/components/mock-up/image';
-import Button from '~/components/mock-up/button';
-import Rating from '~/components/mock-up/rating';
+import Image from '~/components/templates/components/image';
+import Button from '~/components/templates/components/button';
+import Rating from '~/components/templates/components/rating';
 
 export default function HeroSection() {
   const { heroSection } = useUIConfig();

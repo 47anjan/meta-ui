@@ -11,7 +11,7 @@ import { DotFilledIcon } from '@radix-ui/react-icons';
 export default function ServeAreaSection() {
   const Map = useMemo(
     () =>
-      dynamic(() => import('~/components/mock-up/map'), {
+      dynamic(() => import('~/components/templates/components/map'), {
         loading: () => <p>A map is loading</p>,
         ssr: false,
       }),

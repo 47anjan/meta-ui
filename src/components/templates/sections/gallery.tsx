@@ -2,7 +2,8 @@
 
 import React from 'react';
 
-import Image from '~/components/mock-up/image';
+import Image from '~/components/templates/components/image';
+
 import { useUIConfig } from '~/context/UIConfigProvider';
 import { GALLERY_IMAGES } from '~/lib/constants';
 

@@ -7,19 +7,19 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { UIConfigProvider } from '~/context/UIConfigProvider';
-import Header from '~/components/mock-up/header';
-import HeroSection from '~/sections/hero';
-import FeatureSection from '~/sections/feature';
-import BeforeAfterSection from '~/sections/before-after';
-import WhyChooseSection from '~/sections/why-choose';
-import QuoteSection from '~/sections/quote';
-import GallerySection from '~/sections/gallery';
-import StatsSection from '~/sections/stats';
-import ReviewSection from '~/sections/review';
-import ContactForm from '~/sections/contact-form';
-import FAQ from '~/sections/faq';
-import ServeAreaSection from '~/sections/serve-area';
-import Footer from '~/components/mock-up/footer';
+import Header from '~/components/templates/components/header';
+import HeroSection from '~/components/templates/sections/hero';
+import FeatureSection from '~/components/templates/sections/feature';
+import BeforeAfterSection from '~/components/templates/sections/before-after';
+import WhyChooseSection from '~/components/templates/sections/why-choose';
+import QuoteSection from '~/components/templates/sections/quote';
+import GallerySection from '~/components/templates/sections/gallery';
+import StatsSection from '~/components/templates/sections/stats';
+import ReviewSection from '~/components/templates/sections/review';
+import ContactForm from '~/components/templates/sections/contact-form';
+import FAQ from '~/components/templates/sections/faq';
+import ServeAreaSection from '~/components/templates/sections/serve-area';
+import Footer from '~/components/templates/components/footer';
 
 export default async function MockUpPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;

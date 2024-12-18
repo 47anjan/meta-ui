@@ -6,12 +6,15 @@ import { cn } from '~/lib/utils';
 
 import { ModeToggle } from '~/components/mode-toggle';
 import { Button, buttonVariants } from '~/components/ui/button';
+import Hero from '~/components/home/Hero';
+import NavBar from '~/components/home/Nevbar';
 
 export default function Home() {
   return (
     <HydrateClient>
-      <div>
-        <header>
+      <div className='min-h-screen'>
+        <NavBar />
+        {/* <header>
           <nav className='fixed inset-x-0 top-0 z-50 border-b'>
             <div className='flex h-14 w-full items-center justify-end gap-4 px-4'>
               <SignedOut>
@@ -25,9 +28,9 @@ export default function Home() {
               <ModeToggle />
             </div>
           </nav>
-        </header>
-        <main className='flex min-h-screen flex-col items-center justify-center gap-4'>
-          <SignedIn>
+        </header> */}
+        <main>
+          {/* <SignedIn>
             <div className='flex flex-col items-center gap-4'>
               <Link className={cn(buttonVariants({ variant: 'outline', size: 'lg' }), 'w-52')} href='/dashboard'>
                 Dashboard
@@ -36,7 +39,8 @@ export default function Home() {
                 Register
               </Link>
             </div>
-          </SignedIn>
+          </SignedIn> */}
+          <Hero />
         </main>
       </div>
     </HydrateClient>

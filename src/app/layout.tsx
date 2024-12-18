@@ -45,7 +45,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <ClerkProvider>
       <html lang='en' className={`${neueMontreal.className}`} suppressHydrationWarning>
         <body>
-          <ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
+          <ThemeProvider attribute='class' defaultTheme='dark' disableTransitionOnChange>
             <TRPCReactProvider>{children}</TRPCReactProvider>
           </ThemeProvider>
         </body>

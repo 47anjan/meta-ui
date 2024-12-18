@@ -25,7 +25,7 @@ export default function SkeletonTable() {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {Array(5)
+          {Array(10)
             .fill('*')
             .map((_, index) => (
               <TableRow key={index}>

@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
 import { sendEmail } from '~/lib/_actions';
-import Button from '~/components/mock-up/button';
+import Button from '~/components/templates/components/button';
 
 export default function ContactForm() {
   const [loading, setLoading] = useState(false);

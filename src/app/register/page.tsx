@@ -86,7 +86,7 @@ export default function RegisterPage() {
       form.reset();
       setCompanyID('');
       setFileImgs([]);
-      router.push(`/mock-up/${created?.slug}`);
+      router.push(`/templates/${created?.slug}`);
     } catch (err) {
       console.error(err);
     } finally {

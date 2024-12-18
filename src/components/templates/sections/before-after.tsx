@@ -7,12 +7,12 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Image from '~/components/mock-up/image';
-import Button from '~/components/mock-up/button';
+import Button from '~/components/templates/components/button';
 import { BEFORE_AFTER } from '~/lib/constants';
 
 import 'swiper/css/navigation';
 import 'swiper/css';
+import Image from '~/components/templates/components/image';
 
 export default function BeforeAfterSection() {
   const [swiper, setSwiper] = useState<SwiperClass>();
