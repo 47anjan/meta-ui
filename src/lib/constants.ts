@@ -200,3 +200,30 @@ export const QUICK_LINKS = [
     label: 'Quote',
   },
 ];
+
+export const SERVICES = [
+  {
+    id: '1',
+    title: 'Roof installation and replacement',
+    description:
+      'Ensure your home is well-protected with our expert roof installation and replacement services. Whether you’re building a new home or upgrading an aging roof, we provide durable, weather-resistant roofing solutions that blend functionality with aesthetics. Trust us to keep your home safe and secure for years to come.',
+    subtitle: 'Expert solutions for new roofs or replacements',
+    image: '/images/feature.jpg',
+  },
+  {
+    id: '2',
+    title: 'Roof repairs',
+    description:
+      'From minor leaks to significant structural damage, our comprehensive roof repair services are designed to address all your roofing concerns quickly and efficiently. Our experienced team uses high-quality materials and proven techniques to restore the integrity of your roof, ensuring it stands strong against the elements.',
+    subtitle: 'Reliable fixes to restore your roof’s integrity',
+    image: '/images/about-us.jpg',
+  },
+  {
+    id: '3',
+    title: 'Roof inspections and maintenance',
+    description:
+      'Prolong the life of your roof with our detailed inspection and maintenance services. Our thorough evaluations identify potential issues before they become costly repairs, while our preventive maintenance solutions ensure your roof stays in peak condition, providing peace of mind and lasting protection for your home.',
+    subtitle: 'Preventive care to extend your roof’s lifespan',
+    image: '/images/gallery6.jpeg',
+  },
+];

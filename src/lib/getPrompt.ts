@@ -123,26 +123,29 @@ const getPrompt = (companyInfo: CompanyInfo) => {
               heading: 'Our Featured Roofing Services',
               services: [
                 {
-                  id: '1',
-                  title: 'Roof installation and replacement',
-                  description: 'Providing prompt emergency response and repairs.',
-                  link: '/services/emergency',
-                  icon: '/path/to/icon1.png',
-                },
-                {
-                  id: '2',
-                  title: 'Roof repairs',
-                  description: 'Thorough inspection to detect potential issues early.',
-                  link: '/services/inspection',
-                  icon: '/path/to/icon2.png',
-                },
-                {
-                  id: '3',
-                  title: 'Roof inspections and maintenance',
-                  description: 'Thorough inspection to detect potential issues early.',
-                  link: '/services/inspection',
-                  icon: '/path/to/icon2.png',
-                },
+                id: '1',
+                title: 'Roof installation and replacement',
+                description:
+                  'Ensure your home is well-protected with our expert roof installation and replacement services. ',
+                subtitle: 'Expert solutions for new roofs or replacements',
+                image: '/images/feature.jpg',
+              },
+              {
+                id: '2',
+                title: 'Roof repairs',
+                description:
+                  'From minor leaks to significant structural damage, our comprehensive roof repair services are designed to address all your roofing concerns quickly and efficiently.',
+                subtitle: 'Reliable fixes to restore your roof’s integrity',
+                image: '/images/about-us.jpg',
+              },
+              {
+                id: '3',
+                title: 'Roof inspections and maintenance',
+                description:
+                  'Prolong the life of your roof with our detailed inspection and maintenance services.',
+                subtitle: 'Preventive care to extend your roof’s lifespan',
+                image: '/images/gallery6.jpeg',
+              },
               ],
               serviceImage: {
                 src: '/images/services.jpg', //service or featured image

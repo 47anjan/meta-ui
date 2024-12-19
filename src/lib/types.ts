@@ -66,8 +66,8 @@ export interface Service {
   id?: string;
   title?: string;
   description?: string;
-  link?: string;
-  icon?: string;
+  subtitle?: string;
+  image?: string;
 }
 export interface ServiceContent {
   heading?: string;
