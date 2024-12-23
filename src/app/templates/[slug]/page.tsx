@@ -10,7 +10,6 @@ import { UIConfigProvider } from '~/context/UIConfigProvider';
 import Header from '~/components/templates/components/header';
 import HeroSection from '~/components/templates/sections/hero';
 import FeatureSection from '~/components/templates/sections/feature';
-import BeforeAfterSection from '~/components/templates/sections/before-after';
 import WhyChooseSection from '~/components/templates/sections/why-choose';
 import QuoteSection from '~/components/templates/sections/quote';
 import GallerySection from '~/components/templates/sections/gallery';
@@ -45,7 +44,6 @@ export default async function MockUpPage(props: { params: Promise<{ slug: string
         <Header />
         <HeroSection />
         <FeatureSection />
-        <BeforeAfterSection />
         <WhyChooseSection />
         <QuoteSection />
         <GallerySection />

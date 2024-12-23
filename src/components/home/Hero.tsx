@@ -10,7 +10,7 @@ const Hero = () => {
               <h1 className='mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight'>
                 Provide your company information, and Meta will handle the rest
               </h1>
-              <p className='dark:text-body-color-dark text-body-color mb-12 text-base !leading-relaxed sm:text-lg md:text-xl'>
+              <p className='mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl'>
                 AI-powered platform for creating professional websites with prebuilt templates. Input your company info
                 to generate fully functional, customizable websites.
               </p>
@@ -20,6 +20,12 @@ const Hero = () => {
                   className='inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5'
                 >
                   Star on GitHub
+                </Link>
+                <Link
+                  href='/register'
+                  className='inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5'
+                >
+                  Build A Website
                 </Link>
               </div>
             </div>
