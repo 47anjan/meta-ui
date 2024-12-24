@@ -6,7 +6,7 @@ const getPrompt = (companyInfo: CompanyInfo) => {
     Generate a comprehensive JSON configuration for a website based on the following company information:
            Company Info: ${JSON.stringify(companyInfo)}
 
-           Replace all image paths in the JSON provided below with the following images by matching the image descriptions to the relevant sections. Duplicate images if necessary to ensure every image path is filled. Place each image in its correct section based on its description
+           Replace all image paths in the JSON provided below with the following images by matching the image descriptions to the relevant sections. Duplicate images if necessary to ensure every image path is filled including services. Place each image in its correct section based on its description
     
           Ensure that the JSON includes all the following properties with detailed structures:
           - header (with topBar, navbar, contactButton)
@@ -102,7 +102,7 @@ const getPrompt = (companyInfo: CompanyInfo) => {
     services: [
       {
         id: '1',
-        image: 'https://gateway.pinata.cloud/ipfs/QmcxTZMbnr6iNAECGdXDwTk8EigAApsRTNhekD3vumtuLs',
+        image: 'service1.png',
         title: 'Roof installation and replacement',
         subtitle: 'Expert solutions for new roofs or replacements',
         description:
@@ -110,7 +110,7 @@ const getPrompt = (companyInfo: CompanyInfo) => {
       },
       {
         id: '2',
-        image: 'https://gateway.pinata.cloud/ipfs/QmeMFi6sqKYDNkSBmKSxh6bPChmL3BY3LPKuvYEHEw1Z7B',
+        image: 'service2.png',
         title: 'Roof repairs',
         subtitle: 'Reliable fixes to restore your roof’s integrity',
         description:
@@ -118,7 +118,7 @@ const getPrompt = (companyInfo: CompanyInfo) => {
       },
       {
         id: '3',
-        image: 'https://gateway.pinata.cloud/ipfs/QmVMX5WhzZCSu1kqRZDvCGgA67yRhY1tVoSFTLvCieP9Bi',
+        image: 'service3.png',
         title: 'Roof inspections and maintenance',
         subtitle: 'Preventive care to extend your roof’s lifespan',
         description:

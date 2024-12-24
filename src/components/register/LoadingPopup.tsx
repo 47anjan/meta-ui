@@ -10,7 +10,12 @@ const LoadingPopup = () => {
         <p className='mx-auto max-w-xl text-center text-sm text-neutral-700 dark:text-neutral-400 md:text-lg'>
           Your mockup is being processing. Please wait while we prepare everything for you.
         </p>
-        <div className='loader'></div>
+
+        <div className='three-body'>
+          <div className='three-body__dot'></div>
+          <div className='three-body__dot'></div>
+          <div className='three-body__dot'></div>
+        </div>
       </BackgroundLines>
     </div>
   );
