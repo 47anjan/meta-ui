@@ -47,7 +47,6 @@ export default function ContactForm() {
                 const result = await sendEmail(data);
 
                 if (result.success) {
-                  console.log(result.data);
                   form.reset();
                   toast.success('Thank you for reaching out!. Our support team will reach out soon.');
                 }

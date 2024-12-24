@@ -12,7 +12,6 @@ function useSlugAvailability() {
       try {
         const available = await checkSlug({ slug });
         setIsAvailable(available);
-        console.log({ available });
       } catch (error) {
         console.error('Error checking slug availability:', error);
       }

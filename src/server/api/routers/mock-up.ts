@@ -22,16 +22,6 @@ export const mockUpRouter = createTRPCRouter({
       })
     )
     .mutation(async ({ ctx, input }) => {
-      console.log({
-        ID: input.companyID,
-        name: input.name,
-        serviceType: input.serviceType,
-        description: input.description,
-        phone: input.phone,
-        email: input.email,
-        imageData: input.imageData,
-      });
-
       const data = await generateWebsiteConfig({
         name: input.name,
         serviceType: input.serviceType,

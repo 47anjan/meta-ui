@@ -52,7 +52,6 @@ export default function RegisterPage() {
       }));
 
       setFileImgs((prev) => [...prev, ...selectedFiles]);
-      console.log(fileImgs);
     }
   };
 
