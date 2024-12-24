@@ -1,6 +1,6 @@
 # Meta UI
 
-Meta UI is a powerful platform designed to help users create professional, fully functional websites effortlessly. By combining AI technology with customizable prebuilt templates, users can simply input their company information to generate websites tailored to their needs.
+Meta UI is a powerful platform designed to help users create, a fully functional lending page effortlessly. By combining AI technology with customizable prebuilt templates, users can simply input their company information to generate websites tailored to their needs.
 
 ## Features
 
