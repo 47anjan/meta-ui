@@ -25,7 +25,6 @@ export interface SocialLinks {
 export interface Header {
   topBar?: {
     heading?: string;
-    socialLinks?: SocialLinks;
   };
   navbar: {
     logo?: Logo;
@@ -69,18 +68,12 @@ export interface Service {
   subtitle?: string;
   image?: string;
 }
-export interface ServiceContent {
-  heading?: string;
-  subheading?: string;
-  info?: string;
-}
+
 export interface ServicesSection {
   id?: string;
   label?: string;
   heading?: string;
   services?: Service[];
-  serviceContent?: ServiceContent;
-  serviceImage?: Image;
   callToAction?: CallToAction;
 }
 

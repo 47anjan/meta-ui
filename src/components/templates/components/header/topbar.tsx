@@ -22,7 +22,7 @@ const TopBar = () => {
           <span className='overflow-hidden text-ellipsis whitespace-nowrap text-[12px] font-[600] leading-[16px] text-white md:text-[14px] md:leading-[20px]'>
             {topBar?.heading ? topBar.heading : 'Tree Cutting Service'}
           </span>
-          {topBar?.socialLinks && (
+          {/* {topBar?.socialLinks && (
             <div className='hidden gap-5 md:flex'>
               {topBar?.socialLinks?.instagram && (
                 <Link
@@ -67,7 +67,7 @@ const TopBar = () => {
                 </Link>
               )}
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </div>

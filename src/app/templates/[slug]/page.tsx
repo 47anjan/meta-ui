@@ -2,23 +2,8 @@ import React from 'react';
 
 import { api } from '~/trpc/server';
 import { Config } from '~/lib/types';
-
-import { ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
+import Template1 from '~/templates/template-1';
 import { UIConfigProvider } from '~/context/UIConfigProvider';
-import Header from '~/components/templates/components/header';
-import HeroSection from '~/components/templates/sections/hero';
-import FeatureSection from '~/components/templates/sections/feature';
-import WhyChooseSection from '~/components/templates/sections/why-choose';
-import QuoteSection from '~/components/templates/sections/quote';
-import GallerySection from '~/components/templates/sections/gallery';
-import StatsSection from '~/components/templates/sections/stats';
-import ReviewSection from '~/components/templates/sections/review';
-import ContactForm from '~/components/templates/sections/contact-form';
-import FAQ from '~/components/templates/sections/faq';
-import ServeAreaSection from '~/components/templates/sections/serve-area';
-import Footer from '~/components/templates/components/footer';
 
 export default async function MockUpPage(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
@@ -40,21 +25,7 @@ export default async function MockUpPage(props: { params: Promise<{ slug: string
 
   return (
     <UIConfigProvider config={config}>
-      <main className='min-h-screen w-full text-[#02050B]'>
-        <Header />
-        <HeroSection />
-        <FeatureSection />
-        <WhyChooseSection />
-        <QuoteSection />
-        <GallerySection />
-        <StatsSection />
-        <ReviewSection />
-        <ContactForm />
-        <FAQ />
-        <ServeAreaSection />
-        <Footer />
-        <ToastContainer position='bottom-right' />
-      </main>
+      <Template1 />
     </UIConfigProvider>
   );
 }

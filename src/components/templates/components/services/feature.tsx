@@ -4,8 +4,8 @@ import React, { useState } from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
 
-import Image from '~/components/templates/components/image';
-import Button from '~/components/templates/components/button';
+import Image from '~/components/templates/components/image/image';
+import Button from '~/components/templates/components/button/button';
 import Link from 'next/link';
 import { cn } from '~/lib/utils';
 import { Service } from '~/lib/types';

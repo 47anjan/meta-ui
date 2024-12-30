@@ -7,14 +7,14 @@ import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Zoom from 'react-medium-image-zoom';
 
-import Image from '~/components/templates/components/image';
+import Image from '~/components/templates/components/image/image';
 
 import 'swiper/css/navigation';
 import 'swiper/css';
 import Link from 'next/link';
 import { useUIConfig } from '~/context/UIConfigProvider';
 import { BEFORE_AFTER } from '~/lib/constants';
-import Button from '~/components/templates/components/button';
+import Button from '~/components/templates/components/button/button';
 
 export default function BeforeAfterSection() {
   const [swiper, setSwiper] = useState<SwiperClass>();

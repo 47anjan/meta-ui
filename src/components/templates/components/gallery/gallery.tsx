@@ -5,7 +5,7 @@ import React from 'react';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Image from '~/components/templates/components/image';
+import Image from '~/components/templates/components/image/image';
 import { GALLERY_IMAGES } from '~/lib/constants';
 
 export default function GallerySection() {

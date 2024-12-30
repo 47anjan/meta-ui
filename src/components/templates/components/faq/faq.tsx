@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Accordion from '~/components/templates/components/accordion';
+import Accordion from '~/components/templates/components/accordion/accordion';
 import { FAQ_DATA } from '~/lib/constants';
 
 export default function FAQ() {

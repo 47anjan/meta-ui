@@ -1,5 +1,7 @@
 import { z } from 'zod';
-import { generateWebsiteConfig } from '~/lib/ai';
+import { generateConfig } from '~/lib/_actions';
+
+import { CompanyInfo } from '~/lib/getPrompt';
 import { createTRPCRouter, publicProcedure } from '~/server/api/trpc';
 
 const imageDataSchema = z.object({
@@ -22,14 +24,16 @@ export const mockUpRouter = createTRPCRouter({
       })
     )
     .mutation(async ({ ctx, input }) => {
-      const data = await generateWebsiteConfig({
+      const companyInfo: CompanyInfo = {
         name: input.name,
         serviceType: input.serviceType,
-        description: input.description,
-        phone: input.phone,
+        description: input.description ?? '',
+        phone: input.phone ?? '123456789',
         email: input.email,
         imageData: input.imageData,
-      });
+      };
+
+      const data = await generateConfig(companyInfo);
 
       return ctx.db.mockUp.create({
         data: {

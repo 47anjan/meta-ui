@@ -3,9 +3,9 @@
 import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Image from '~/components/templates/components/image';
-import Button from '~/components/templates/components/button';
-import Rating from '~/components/templates/components/rating';
+import Image from '~/components/templates/components/image/image';
+import Button from '~/components/templates/components/button/button';
+import Rating from '~/components/templates/components/rating/rating';
 
 export default function HeroSection() {
   const { heroSection } = useUIConfig();
@@ -49,13 +49,13 @@ export default function HeroSection() {
                 <div className='flex items-center justify-between gap-4'>
                   {heroSection.rating.users?.length && (
                     <div className='flex space-x-[-10px] lg:space-x-[-15px]'>
-                      {heroSection.rating.users.map((item, index) => (
+                      {heroSection.rating.users.slice(0, 3).map((item, index) => (
                         <Image
                           key={index}
-                          src={item}
+                          src={`/images/user${index + 1}.jpg`}
                           width={150}
                           height={150}
-                          alt='user'
+                          alt={item}
                           className='h-[30px] w-[30px] rounded-full border-[2px] border-white object-cover lg:h-[48px] lg:w-[48px]'
                         />
                       ))}

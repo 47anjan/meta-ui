@@ -1,5 +1,5 @@
 import React, { memo } from 'react';
-import Image from '~/components/templates/components/image';
+import Image from '~/components/templates/components/image/image';
 import { Input } from '~/components/ui/input';
 import { Button } from '~/components/ui/button';
 import { TableRow, TableCell } from '~/components/ui/table';

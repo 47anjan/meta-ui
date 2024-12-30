@@ -1,9 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-
-import Navbar from './navbar';
 import Sidebar from './sidebar';
+import Navbar from './navbar';
 
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);

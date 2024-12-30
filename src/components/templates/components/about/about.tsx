@@ -3,8 +3,8 @@
 import React from 'react';
 
 import { useUIConfig } from '~/context/UIConfigProvider';
-import Image from '~/components/templates/components/image';
-import Button from '~/components/templates/components/button';
+import Image from '~/components/templates/components/image/image';
+import Button from '~/components/templates/components/button/button';
 
 export default function WhyChooseSection() {
   const { aboutSection } = useUIConfig();
