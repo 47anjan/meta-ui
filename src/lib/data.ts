@@ -21,9 +21,6 @@ export const config: Config = {
 
   servicesSection: {
     services: [],
-    serviceImage: {},
-    serviceContent: {},
-
     callToAction: {},
   },
 
