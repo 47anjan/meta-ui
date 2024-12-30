@@ -7,6 +7,7 @@ import Footer from '~/components/templates/components/footer/footer';
 import GallerySection from '~/components/templates/components/gallery/gallery';
 import Header from '~/components/templates/components/header/header';
 import HeroSection from '~/components/templates/components/hero/hero';
+import Hero2 from '~/components/templates/components/hero/hero-2';
 import ServeAreaSection from '~/components/templates/components/locations/serve-area';
 import QuoteSection from '~/components/templates/components/quote/quote';
 import FeatureSection from '~/components/templates/components/services/feature';
@@ -17,7 +18,7 @@ const Template1 = () => {
   return (
     <main className='min-h-screen w-full text-[#02050B]'>
       <Header />
-      <HeroSection />
+      <Hero2 />
       <FeatureSection />
       <WhyChooseSection />
       <QuoteSection />
