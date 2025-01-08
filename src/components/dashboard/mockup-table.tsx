@@ -10,6 +10,7 @@ import { Button } from '~/components/ui/button';
 import { FaTrash, FaPen } from 'react-icons/fa6';
 import SkeletonTable from './skeleton-table';
 import Error from '../error';
+import EmptyMockups from '../empty-mockups';
 
 const MockupTable = () => {
   const { data: mockups, isLoading, error } = api.mockUp.getAll.useQuery();
@@ -25,18 +26,7 @@ const MockupTable = () => {
   if (!mockups) return <SkeletonTable />;
   if (isLoading) return <SkeletonTable />;
   if (error) return <Error />;
-  if (mockups.length > 0 || !mockups)
-    return (
-      <div className='m-5 mx-auto flex min-h-screen max-w-6xl flex-col items-center justify-center gap-3'>
-        <span className='text-3xl'> No mockups available.</span>
-        <Link
-          href='/register'
-          className='inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5'
-        >
-          Create one
-        </Link>
-      </div>
-    );
+  if (mockups.length > 0 || !mockups) return <EmptyMockups />;
 
   return (
     <section className='relative m-5 mx-auto max-w-6xl overflow-auto rounded-lg border bg-card'>
