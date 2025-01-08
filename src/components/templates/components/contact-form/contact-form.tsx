@@ -37,7 +37,7 @@ export default function ContactForm() {
 
               try {
                 const data = {
-                  to: 'hungryAdmiral5@gmail.com',
+                  to: 'anjankarmakar15@gmail.com',
                   name: formData.get('name') as string,
                   email: formData.get('email') as string,
                   phone: formData.get('phone') as string,
