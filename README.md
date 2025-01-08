@@ -112,8 +112,8 @@ Ensure the following environment variables are configured correctly:
 | `yarn dev`                | Starts the development server         |
 | `yarn build`              | Builds the application for production |
 | `yarn start`              | Starts the production server          |
-| `yarn lint`               | Lints the codebase                    |
 | `yarn prisma migrate dev` | Applies database migrations           |
+| `yarn format:fix`         | Format the codebase                   |
 
 ---
 
