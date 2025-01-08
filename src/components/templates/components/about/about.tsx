@@ -14,7 +14,7 @@ export default function WhyChooseSection() {
   return (
     <div id='about' className='w-full bg-white py-[60px] lg:py-[120px]'>
       <div className='mx-[10px] max-w-[1280px] xl:mx-auto'>
-        <div className='flex flex-col-reverse items-center gap-8 lg:flex-row'>
+        <div className='flex flex-col-reverse items-center gap-8 lg:flex-row-reverse'>
           {aboutSection.aboutImage && (
             <div className='w-full flex-1 lg:max-w-[640px]'>
               <Image

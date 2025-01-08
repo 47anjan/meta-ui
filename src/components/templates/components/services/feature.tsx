@@ -16,7 +16,7 @@ export default function FeatureSection() {
 
   const services = servicesSection?.services || SERVICES;
 
-  const [feature, setFeature] = useState<Service | undefined>(services[2]);
+  const [feature, setFeature] = useState<Service | undefined>(services[0]);
 
   if (!servicesSection) return null;
 
@@ -49,13 +49,13 @@ export default function FeatureSection() {
               </span>
               <div className='flex flex-col space-y-2 lg:flex-row lg:space-x-4 lg:space-y-0'>
                 <button
-                  onClick={() => handleFeature(services[0] as Service)}
+                  onClick={() => handleFeature(services[2] as Service)}
                   className={cn(
                     'flex-1 cursor-pointer rounded-full border-[1px] border-[#02050B] px-5 py-2 text-center text-[16px] font-[500] leading-[28px] text-[#02050B] transition-all hover:border-blue hover:bg-blue hover:text-white lg:py-[14px]',
-                    feature?.id === services[0]?.id ? 'border-blue bg-blue text-white' : ''
+                    feature?.id === services[2]?.id ? 'border-blue bg-blue text-white' : ''
                   )}
                 >
-                  {services[0]?.title}
+                  {services[2]?.title}
                 </button>
 
                 <button
@@ -70,13 +70,13 @@ export default function FeatureSection() {
               </div>
 
               <button
-                onClick={() => handleFeature(services[2] as Service)}
+                onClick={() => handleFeature(services[0] as Service)}
                 className={cn(
                   'flex-1 cursor-pointer rounded-full border-[1px] border-[#02050B] px-5 py-2 text-center text-[16px] font-[500] leading-[28px] text-[#02050B] transition-all hover:border-blue hover:bg-blue hover:text-white lg:py-[14px]',
-                  feature?.id === services[2]?.id ? 'border-blue bg-blue text-white' : ''
+                  feature?.id === services[0]?.id ? 'border-blue bg-blue text-white' : ''
                 )}
               >
-                {services[2]?.title}
+                {services[0]?.title}
               </button>
             </div>
 
