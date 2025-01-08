@@ -78,6 +78,9 @@ export const mockUpRouter = createTRPCRouter({
       return mockUp ?? null;
     }),
   checkSlugAvailability: publicProcedure.input(z.object({ slug: z.string() })).mutation(async ({ ctx, input }) => {
+    const count = await ctx.db.mockUp.count();
+    if (count === 0) return true;
+
     const existingMockUp = await ctx.db.mockUp.findUnique({
       where: { slug: input.slug },
     });
