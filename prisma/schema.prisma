@@ -23,6 +23,7 @@ model Post {
 model MockUp {
     id        Int      @id @default(autoincrement())
     name      String
+    template  String?
     isEnabled Boolean  @default(true) @map("is_enabled")
     slug      String   @unique
     content   Json?

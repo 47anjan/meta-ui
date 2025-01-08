@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { useWindowScroll } from 'react-use';
 import { ModeToggle } from '../mode-toggle';
+import Link from 'next/link';
 
 const navItems: string[] = ['Nexus', 'Vault', 'Prologue', 'About', 'Contact'];
 
@@ -47,14 +48,17 @@ const NavBar: React.FC = () => {
           <div className='flex h-full items-center'>
             <div className='hidden md:block'>
               {navItems.map((item: string, index: number) => (
-                <a key={index} href={`#${item.toLowerCase()}`} className='nav-hover-btn'>
+                <Link key={index} href={`#${item.toLowerCase()}`} className='nav-hover-btn'>
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
-          <div>
+          <div className='flex items-center gap-2'>
             <ModeToggle />
+            <Link className='text-sm hover:underline' href={`/dashboard`}>
+              Dashboard
+            </Link>
           </div>
         </nav>
       </header>

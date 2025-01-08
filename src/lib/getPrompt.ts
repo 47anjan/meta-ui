@@ -18,7 +18,7 @@ const getPrompt = (companyInfo: CompanyInfo) => {
            Replace all image paths in the JSON provided below with the following images by matching the image descriptions to the relevant sections. Duplicate images if necessary to ensure every image path is filled including services. Place each image in its correct section based on its description
     
           
-          - heroSection's label should be something meaningful about the service
+          - heroSection's label should be something meaningful about the service and subheading should be at least 30+ words
           - servicesSection's services should at least 3 items and the services    description should be at least 25+ words
           - gallerySection (with images and descriptions) at least 6 items
           - statsSection (relevant company stats)

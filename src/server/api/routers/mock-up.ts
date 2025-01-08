@@ -40,6 +40,7 @@ export const mockUpRouter = createTRPCRouter({
           name: input.name,
           content: data,
           slug: input.companyID,
+          template: 'template1',
         },
       });
     }),
