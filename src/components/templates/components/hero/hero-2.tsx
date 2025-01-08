@@ -10,7 +10,7 @@ const Hero2 = () => {
   if (!heroSection) return null;
 
   return (
-    <section className='bg-white py-12 sm:py-24'>
+    <section className='bg-alice-blue py-12 sm:py-24'>
       <div className='mx-auto max-w-7xl px-6 lg:px-8'>
         <div className='mb-8 flex justify-center'>
           <p className='relative rounded-full px-4 py-1.5 text-sm leading-6 text-gray-600 ring-1 ring-inset ring-gray-900/10 hover:ring-gray-900/20'>
